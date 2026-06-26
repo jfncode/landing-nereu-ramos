@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hospital Nereu Ramos — 80 anos cuidando de Santa Catarina</title>
+<title>Hospital Nereu Ramos — 82 anos cuidando de Santa Catarina</title>
 <link rel="icon" type="image/png" href="fotos/logo-hnr.png">
 <meta name="description" content="Hospital Nereu Ramos (HNR), Florianópolis/SC. Referência estadual em infectologia e pneumologia. Melhor UTI pública do Brasil — 3 anos consecutivos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -179,6 +179,22 @@
   @media(max-width:900px){.esp-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:480px){.esp-grid{grid-template-columns:1fr}}
 
+  /* ---------- VISITAS ---------- */
+  .visitas{background:var(--branco-2)}
+  .visita-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .visita-card{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:28px 26px;box-shadow:var(--sombra-sm);display:flex;flex-direction:column}
+  .visita-card .vc-head{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .visita-card .ic{width:48px;height:48px;flex:0 0 auto;border-radius:13px;background:var(--branco-3);display:grid;place-items:center;font-size:1.4rem}
+  .visita-card h4{color:var(--azul-escuro);font-size:1.12rem}
+  .visita-card .vc-rule{font-size:.86rem;color:var(--tinta-suave);margin:4px 0 16px}
+  .hr-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:auto}
+  .hr-list li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:10px;border-bottom:1px dashed var(--borda)}
+  .hr-list li:last-child{border-bottom:0;padding-bottom:0}
+  .hr-list .hr-label{color:var(--tinta);font-size:.92rem}
+  .hr-list .hr-time{color:var(--vermelho-escuro);font-weight:700;font-size:.95rem;white-space:nowrap}
+  .visita-note{margin-top:26px;font-size:.9rem;color:var(--tinta-suave);background:#fff;border:1px solid var(--borda);border-left:4px solid var(--azul);border-radius:12px;padding:16px 20px}
+  @media(max-width:900px){.visita-grid{grid-template-columns:1fr;gap:18px}}
+
   /* ---------- PRÊMIOS ---------- */
   .premios{background:linear-gradient(135deg,var(--azul-escuro),var(--azul));color:#fff;position:relative;overflow:hidden}
   .premios::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.06)}
@@ -301,6 +317,7 @@
       <a href="#linha">Trajetória</a>
       <a href="#especialidades">Especialidades</a>
       <a href="#premios">Prêmios</a>
+      <a href="#visitas">Visitas</a>
       <a href="#contato">Contato</a>
     </nav>
     <a href="#contato" class="btn btn-primary nav-cta">Fale conosco</a>
@@ -315,7 +332,7 @@
     <div>
       <div class="hero-emblem"><img src="fotos/logo-hnr.png" alt="Logo Hospital Nereu Ramos"></div>
       <span class="eyebrow">Saúde pública de excelência · SUS</span>
-      <h1>80 anos cuidando de <span class="red">Santa Catarina</span></h1>
+      <h1>82 anos cuidando de <span class="red">Santa Catarina</span></h1>
       <p class="sub">Referência estadual em infectologia e pneumologia. Único hospital 100% público de SC reconhecido entre as melhores UTIs do Brasil.</p>
       <div class="hero-cta">
         <a href="#especialidades" class="btn btn-primary">Nossas especialidades →</a>
@@ -339,7 +356,7 @@
 <!-- STATS -->
 <section class="stats" style="padding:64px 0">
   <div class="wrap stats-grid">
-    <div class="stat"><b>80<span class="red">+</span></b><span>anos de história</span></div>
+    <div class="stat"><b>82<span class="red">+</span></b><span>anos de história</span></div>
     <div class="stat"><b>22 mil</b><span>atendimentos por ano</span></div>
     <div class="stat"><b>457</b><span>profissionais dedicados</span></div>
     <div class="stat"><b>106</b><span>leitos instalados</span></div>
@@ -463,6 +480,48 @@
   </div>
 </section>
 
+<!-- VISITAS -->
+<section id="visitas" class="visitas">
+  <div class="wrap">
+    <span class="eyebrow red">Orientações</span>
+    <h2 class="section-title">Horários de visitas</h2>
+    <p class="lead">Confira os horários por setor. Em caso de dúvida, ligue para <b>(48) 3665-9401</b> antes de comparecer.</p>
+    <div class="visita-grid">
+
+      <div class="visita-card reveal">
+        <div class="vc-head"><span class="ic">🏥</span><h4>UTI Geral</h4></div>
+        <p class="vc-rule">2 visitantes por horário · revezando 1 por vez à beira do leito</p>
+        <ul class="hr-list">
+          <li><span class="hr-label">Tarde · boletim médico</span><span class="hr-time">15h – 16h</span></li>
+          <li><span class="hr-label">Noite</span><span class="hr-time">20h30 – 21h30</span></li>
+        </ul>
+      </div>
+
+      <div class="visita-card reveal">
+        <div class="vc-head"><span class="ic">🛏️</span><h4>Enfermarias</h4></div>
+        <p class="vc-rule">4 visitantes por dia · revezando 1 por vez</p>
+        <ul class="hr-list">
+          <li><span class="hr-label">Pavilhão</span><span class="hr-time">15h30 – 17h</span></li>
+          <li><span class="hr-label">DIP I e DIP II</span><span class="hr-time">14h – 15h30</span></li>
+          <li><span class="hr-label">Tisiologia e FGY</span><span class="hr-time">14h – 15h</span></li>
+        </ul>
+      </div>
+
+      <div class="visita-card reveal">
+        <div class="vc-head"><span class="ic">🍽️</span><h4>Acompanhantes</h4></div>
+        <p class="vc-rule">Horários de refeição do acompanhante</p>
+        <ul class="hr-list">
+          <li><span class="hr-label">Café da manhã</span><span class="hr-time">08h30 – 09h</span></li>
+          <li><span class="hr-label">Almoço</span><span class="hr-time">13h – 13h30</span></li>
+          <li><span class="hr-label">Jantar</span><span class="hr-time">21h30 – 22h</span></li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="visita-note reveal">ℹ️ As visitas seguem o <b>POP CCIH-09</b> e demais orientações da Comissão de Controle de Infecção Hospitalar. Os horários podem sofrer ajustes conforme a condição clínica do paciente e orientação da equipe.</p>
+  </div>
+</section>
+
 <!-- CONTATO -->
 <section id="contato" class="contato">
   <div class="wrap">
@@ -501,6 +560,7 @@
         <a href="#linha">Trajetória</a>
         <a href="#especialidades">Especialidades</a>
         <a href="#premios">Prêmios</a>
+        <a href="#visitas">Horários de visita</a>
       </div>
       <div>
         <h5>Contato</h5>
@@ -576,7 +636,7 @@
       { k:['horario','que horas','funciona','aberto','abre','fecha','expediente'],
         r:'O <b>ambulatório atende de segunda a sexta, das 7h às 19h</b>. A internação e a UTI funcionam <b>24h</b>. Para confirmar o horário da sua especialidade, ligue <b>(48) 3665-9401</b>.' },
       { k:['acompanhante','visita','visitar','horario de visita','levar alguem'],
-        r:'As <b>visitas acontecem na parte da tarde, a partir das 15h</b>. ⏰ Cada setor pode ter um horário específico, então vale confirmar pelo <b>(48) 3665-9401</b> antes de ir. 🙂' },
+        r:'⏰ <b>Horários de visita por setor:</b><br>• <b>UTI Geral:</b> 15h–16h (boletim médico) e 20h30–21h30 — 2 visitantes por horário.<br>• <b>Enfermarias</b> (4 visitantes/dia, 1 por vez): Pavilhão 15h30–17h · DIP I e II 14h–15h30 · Tisiologia e FGY 14h–15h.<br>• <b>Refeições do acompanhante:</b> café 08h30–09h · almoço 13h–13h30 · jantar 21h30–22h.<br>📋 <a href="#visitas">Ver tabela completa</a>. Em caso de dúvida, ligue <b>(48) 3665-9401</b>. 🙂' },
       { k:['acidente biologico','mordida','mordeu','animal','perfurocortante','perfuro','agulha','exposicao','profilaxia','risco','acidente de trabalho','picada','picado'],
         r:'⚠️ Sim — atendemos <b>acidentes de trabalho com perfurocortantes, mordeduras e picadas de animais</b> e exposições de risco. Fora do horário do ambulatório (após as 19h), a entrada é feita pela <b>recepção principal</b>. Em dúvida, ligue <b>(48) 3665-9401</b>.' },
       { k:['covid','corona','pandemia','gripe','h1n1'],
@@ -584,7 +644,7 @@
       { k:['uti','terapia intensiva','premio','melhor','reconhecimento','top performer'],
         r:'🏆 Nossa UTI é reconhecida como uma das <b>melhores do Brasil pelo 3º ano consecutivo</b> (selo UTI Top Performer — AMIB/Epimed), sendo o único hospital 100% público da rede estadual de SC com a certificação! <a href="https://ndmais.com.br/saude/melhor-uti-do-brasil-fica-em-hospital-publico-de-florianopolis-confira-qual/" target="_blank" rel="noopener">Leia a matéria ↗</a>' },
       { k:['historia','fundacao','quando','idade','anos','quantos anos','antigo'],
-        r:'Fomos inaugurados em <b>6 de janeiro de 1943</b> pelo governador Nereu Ramos — são mais de <b>80 anos</b> cuidando da saúde de Santa Catarina! 🏥 <a href="#linha">Veja nossa trajetória</a>.' },
+        r:'Fomos inaugurados em <b>6 de janeiro de 1943</b> pelo governador Nereu Ramos — são mais de <b>82 anos</b> cuidando da saúde de Santa Catarina! 🏥 <a href="#linha">Veja nossa trajetória</a>.' },
       { k:['ouvidoria','reclamacao','elogio','sugestao','denuncia','reclamar'],
         r:'A Ouvidoria recebe sugestões, elogios, reclamações e denúncias pelo <b>(48) 3665-9401</b> ou e-mail <b>hnr@saude.sc.gov.br</b>. 🗣️' },
       { k:['estacionamento','vaga','carro','estacionar','estaciona'],
