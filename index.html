@@ -70,6 +70,7 @@
   .nav-links{display:flex;gap:30px;align-items:center}
   .nav-links a{font-weight:600;font-size:.95rem;color:var(--tinta-suave);transition:color .2s}
   .nav-links a:hover{color:var(--azul)}
+  .nav-links .nav-cta-mobile{display:none}
   .nav-toggle{display:none;width:42px;height:42px;border:1px solid var(--borda);background:#fff;border-radius:10px;cursor:pointer;padding:0;place-items:center;flex:0 0 auto}
   .nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{content:"";display:block;width:20px;height:2px;background:var(--azul-escuro);border-radius:2px;transition:transform .25s,opacity .2s;position:relative}
   .nav-toggle span::before{position:absolute;top:-6px}
@@ -94,11 +95,14 @@
       gap:0;padding:8px;border-bottom:1px solid var(--borda);box-shadow:var(--sombra);
       max-height:0;overflow:hidden;padding-top:0;padding-bottom:0;transition:max-height .28s ease,padding .28s ease;
     }
-    .nav-links.open{max-height:340px;padding-top:8px;padding-bottom:8px}
+    .nav-links.open{max-height:460px;padding-top:8px;padding-bottom:8px}
     .nav-links a{padding:13px 14px;border-radius:10px;font-size:1rem}
     .nav-links a:hover{background:var(--branco-2)}
+    .nav-cta{display:none}
+    .nav-links .nav-cta-mobile{display:flex;justify-content:center;margin:8px 6px 4px;padding:14px 24px;font-size:1rem}
+    .nav-links .nav-cta-mobile:hover{transform:none}
   }
-  @media(max-width:600px){section{padding:58px 0}.nav-cta{display:none}}
+  @media(max-width:600px){section{padding:58px 0}}
 
   /* ---------- HERO ---------- */
   .hero{position:relative;padding:0;overflow:hidden;background:var(--branco)}
@@ -319,6 +323,7 @@
       <a href="#premios">Prêmios</a>
       <a href="#visitas">Visitas</a>
       <a href="#contato">Contato</a>
+      <a href="https://jfncode.github.io/pops-hnr-beta/" target="_blank" rel="noopener" class="btn btn-primary nav-cta-mobile">Área do colaborador</a>
     </nav>
     <a href="https://jfncode.github.io/pops-hnr-beta/" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Área do colaborador</a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
