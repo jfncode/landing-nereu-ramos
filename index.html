@@ -304,7 +304,13 @@
   .typing span{width:7px;height:7px;border-radius:50%;background:var(--azul-claro);animation:blink 1.3s infinite both}
   .typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
   @keyframes blink{0%,80%,100%{opacity:.3}40%{opacity:1}}
-  @media(max-width:480px){.nereu-fab .fab-txt{display:none}.nereu-win{height:calc(100vh - 32px)}}
+  @media(max-width:600px){
+    .nereu-fab .fab-txt{display:none}
+    .nereu-fab{padding:7px;right:16px;bottom:16px}
+    .nereu-fab img{width:46px;height:46px}
+    .nereu-fab .pulse{left:auto;right:5px;top:5px}
+  }
+  @media(max-width:480px){.nereu-win{height:calc(100vh - 32px)}}
 </style>
 </head>
 <body>
