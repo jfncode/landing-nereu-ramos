@@ -584,7 +584,7 @@
     <div class="foot-bottom">
       <span>© 2026 Hospital Nereu Ramos · Secretaria de Estado da Saúde de SC</span>
       <span>Imagens: SECOM/SES-SC e Arquivo Público de SC</span>
-      <span class="dev-credit">Desenvolvido por <a id="devMail" href="mailto:jfntavares91@gmail.com" rel="noopener" title="Fale com o desenvolvedor">jfncode</a></span>
+      <span class="dev-credit">Desenvolvido por <a href="https://www.jfncode.com.br" target="_blank" rel="noopener" title="jfncode — sites, sistemas e automação com IA">jfncode</a></span>
     </div>
   </div>
 </footer>
@@ -623,24 +623,6 @@
     n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
   })();
 
-  /* Credito do dev: tenta o cliente de e-mail; se nenhum abrir, cai no Gmail web */
-  (function(){
-    const a=document.getElementById('devMail');
-    if(!a) return;
-    const to='jfntavares91@gmail.com';
-    const gmail='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to);
-    a.addEventListener('click',function(e){
-      e.preventDefault();
-      let left=false;
-      const onblur=()=>{left=true;};
-      window.addEventListener('blur',onblur,{once:true});
-      window.location.href='mailto:'+to;          // abre o cliente padrao, se houver
-      setTimeout(function(){                        // se a aba nao perdeu o foco, nenhum cliente abriu
-        window.removeEventListener('blur',onblur);
-        if(!left && !document.hidden) window.open(gmail,'_blank','noopener');
-      },1200);
-    });
-  })();
 
   /* ===== Chatbot Nereu — FAQ fixo ===== */
   (function(){
